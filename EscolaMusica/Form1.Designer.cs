@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label5 = new System.Windows.Forms.Label();
             this.txtCurso = new System.Windows.Forms.TextBox();
@@ -62,8 +63,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.rgbConcluido = new System.Windows.Forms.RadioButton();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -402,6 +406,20 @@
             this.label7.TabIndex = 58;
             this.label7.Text = "Código:";
             // 
+            // rgbConcluido
+            // 
+            this.rgbConcluido.AutoSize = true;
+            this.rgbConcluido.Location = new System.Drawing.Point(808, 77);
+            this.rgbConcluido.Name = "rgbConcluido";
+            this.rgbConcluido.Size = new System.Drawing.Size(74, 17);
+            this.rgbConcluido.TabIndex = 60;
+            this.rgbConcluido.Text = "Concluído";
+            this.rgbConcluido.UseVisualStyleBackColor = true;
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -410,6 +428,7 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(936, 537);
+            this.Controls.Add(this.rgbConcluido);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCep);
@@ -445,6 +464,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,38 +473,40 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCurso;
-        private System.Windows.Forms.TextBox txtMensalidade;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtEmailAluno;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtCelularAluno;
-        private System.Windows.Forms.TextBox txtNascimento;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNomeAluno;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCelularResponsavel;
-        private System.Windows.Forms.TextBox txtNomeResponsavel;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtEmailResponsavel;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox txtNomeAluno;
+        public System.Windows.Forms.TextBox txtCodigo;
+        public System.Windows.Forms.TextBox txtCurso;
+        public System.Windows.Forms.TextBox txtMensalidade;
+        public System.Windows.Forms.TextBox txtEmailAluno;
+        public System.Windows.Forms.TextBox txtBairro;
+        public System.Windows.Forms.TextBox txtEndereco;
+        public System.Windows.Forms.TextBox txtCelularAluno;
+        public System.Windows.Forms.TextBox txtNascimento;
+        public System.Windows.Forms.TextBox txtCelularResponsavel;
+        public System.Windows.Forms.TextBox txtNomeResponsavel;
+        public System.Windows.Forms.TextBox txtEmailResponsavel;
+        public System.Windows.Forms.TextBox txtCep;
+        public System.Windows.Forms.RadioButton rgbConcluido;
+        public System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
 
