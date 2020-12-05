@@ -59,7 +59,38 @@ namespace EscolaMusica
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            CarregaCadastros();            
+            dgvCadastros.Rows.Clear();
+            CarregaCadastros();
+            
+            //try
+            //{
+            //    conexao.Open();
+
+            //    SqlCommand comando = new SqlCommand("SELECT codigo, aluno, nascimento, celularAluno, curso, endereco, bairro, cep, emailAluno, mensalidade, responsavel, emailResponsavel, celularResponsavel, concluido FROM cadastro WHERE aluno LIKE '%" + txtPesquisa.Text + "%'", conexao);
+            //    SqlDataAdapter da = new SqlDataAdapter(comando);
+            //    DataTable dt = new DataTable();
+            //    da.Fill(dt);
+                
+            //    if (dt.Rows.Count > 0)
+            //    {
+                    
+            //        foreach (DataRow item in dt.Rows)
+            //        {
+                        
+                        
+            //            // Adiciona na grid os produtos cadastrados no banco de dados.
+            //            dgvCadastros.Rows.Add(item["codigo"].ToString(), item["aluno"].ToString(), item["nascimento"].ToString(), item["celularAluno"].ToString(), item["curso"].ToString(), item["endereco"].ToString(), item["bairro"].ToString(), item["cep"].ToString(), item["emailAluno"].ToString(), item["mensalidade"].ToString(), item["responsavel"].ToString(), item["emailResponsavel"].ToString(), item["celularResponsavel"].ToString(), item["concluido"].ToString());
+            //        }
+            //    }
+            //}
+            //catch (Exception erro)
+            //{
+            //    MessageBox.Show(erro.Message);
+            //}
+            //finally
+            //{
+            //    conexao.Close();
+            //}
         }
 
         private void dgvCadastros_DoubleClick(object sender, EventArgs e)
