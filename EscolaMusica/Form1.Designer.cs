@@ -85,7 +85,7 @@
             this.txtCurso.Location = new System.Drawing.Point(647, 150);
             this.txtCurso.Name = "txtCurso";
             this.txtCurso.Size = new System.Drawing.Size(235, 26);
-            this.txtCurso.TabIndex = 53;
+            this.txtCurso.TabIndex = 4;
             // 
             // txtMensalidade
             // 
@@ -93,7 +93,7 @@
             this.txtMensalidade.Location = new System.Drawing.Point(654, 262);
             this.txtMensalidade.Name = "txtMensalidade";
             this.txtMensalidade.Size = new System.Drawing.Size(89, 26);
-            this.txtMensalidade.TabIndex = 50;
+            this.txtMensalidade.TabIndex = 9;
             // 
             // label12
             // 
@@ -111,7 +111,7 @@
             this.txtEmailAluno.Location = new System.Drawing.Point(125, 265);
             this.txtEmailAluno.Name = "txtEmailAluno";
             this.txtEmailAluno.Size = new System.Drawing.Size(406, 26);
-            this.txtEmailAluno.TabIndex = 44;
+            this.txtEmailAluno.TabIndex = 8;
             // 
             // label9
             // 
@@ -129,7 +129,7 @@
             this.txtBairro.Location = new System.Drawing.Point(479, 205);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(187, 26);
-            this.txtBairro.TabIndex = 42;
+            this.txtBairro.TabIndex = 6;
             // 
             // label8
             // 
@@ -147,7 +147,7 @@
             this.txtEndereco.Location = new System.Drawing.Point(109, 205);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(308, 26);
-            this.txtEndereco.TabIndex = 38;
+            this.txtEndereco.TabIndex = 5;
             // 
             // label6
             // 
@@ -175,7 +175,7 @@
             this.txtCelularAluno.Location = new System.Drawing.Point(392, 150);
             this.txtCelularAluno.Name = "txtCelularAluno";
             this.txtCelularAluno.Size = new System.Drawing.Size(139, 26);
-            this.txtCelularAluno.TabIndex = 35;
+            this.txtCelularAluno.TabIndex = 3;
             // 
             // txtNascimento
             // 
@@ -183,7 +183,7 @@
             this.txtNascimento.Location = new System.Drawing.Point(183, 150);
             this.txtNascimento.Name = "txtNascimento";
             this.txtNascimento.Size = new System.Drawing.Size(111, 26);
-            this.txtNascimento.TabIndex = 34;
+            this.txtNascimento.TabIndex = 2;
             // 
             // label3
             // 
@@ -201,7 +201,7 @@
             this.txtNomeAluno.Location = new System.Drawing.Point(156, 100);
             this.txtNomeAluno.Name = "txtNomeAluno";
             this.txtNomeAluno.Size = new System.Drawing.Size(726, 26);
-            this.txtNomeAluno.TabIndex = 32;
+            this.txtNomeAluno.TabIndex = 1;
             // 
             // label1
             // 
@@ -237,7 +237,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(179, 16);
             this.label13.TabIndex = 56;
-            this.label13.Text = "Informações do responsavel";
+            this.label13.Text = "Informações do responsável";
             // 
             // label2
             // 
@@ -255,7 +255,7 @@
             this.txtCelularResponsavel.Location = new System.Drawing.Point(709, 75);
             this.txtCelularResponsavel.Name = "txtCelularResponsavel";
             this.txtCelularResponsavel.Size = new System.Drawing.Size(139, 26);
-            this.txtCelularResponsavel.TabIndex = 57;
+            this.txtCelularResponsavel.TabIndex = 12;
             // 
             // txtNomeResponsavel
             // 
@@ -263,7 +263,7 @@
             this.txtNomeResponsavel.Location = new System.Drawing.Point(171, 28);
             this.txtNomeResponsavel.Name = "txtNomeResponsavel";
             this.txtNomeResponsavel.Size = new System.Drawing.Size(699, 26);
-            this.txtNomeResponsavel.TabIndex = 56;
+            this.txtNomeResponsavel.TabIndex = 10;
             // 
             // label11
             // 
@@ -273,7 +273,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(151, 20);
             this.label11.TabIndex = 55;
-            this.label11.Text = "Nome Responsavel:";
+            this.label11.Text = "Nome Responsável:";
             // 
             // txtEmailResponsavel
             // 
@@ -281,7 +281,7 @@
             this.txtEmailResponsavel.Location = new System.Drawing.Point(162, 75);
             this.txtEmailResponsavel.Name = "txtEmailResponsavel";
             this.txtEmailResponsavel.Size = new System.Drawing.Size(438, 26);
-            this.txtEmailResponsavel.TabIndex = 54;
+            this.txtEmailResponsavel.TabIndex = 11;
             // 
             // label10
             // 
@@ -291,7 +291,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(148, 20);
             this.label10.TabIndex = 53;
-            this.label10.Text = "Email Responsavel:";
+            this.label10.Text = "Email Responsável:";
             // 
             // txtCep
             // 
@@ -299,7 +299,7 @@
             this.txtCep.Location = new System.Drawing.Point(727, 205);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(155, 26);
-            this.txtCep.TabIndex = 57;
+            this.txtCep.TabIndex = 7;
             // 
             // label14
             // 
@@ -334,10 +334,11 @@
             // rgbConcluido
             // 
             this.rgbConcluido.AutoSize = true;
+            this.rgbConcluido.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rgbConcluido.Location = new System.Drawing.Point(808, 77);
             this.rgbConcluido.Name = "rgbConcluido";
             this.rgbConcluido.Size = new System.Drawing.Size(74, 17);
-            this.rgbConcluido.TabIndex = 60;
+            this.rgbConcluido.TabIndex = 14;
             this.rgbConcluido.Text = "Concluído";
             this.rgbConcluido.UseVisualStyleBackColor = true;
             // 
@@ -347,13 +348,14 @@
             // 
             // btnSair
             // 
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.Image = global::EscolaMusica.Properties.Resources.cancel;
             this.btnSair.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSair.Location = new System.Drawing.Point(523, 463);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(89, 49);
-            this.btnSair.TabIndex = 7;
+            this.btnSair.TabIndex = 16;
             this.btnSair.Text = "Sair";
             this.btnSair.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSair.UseVisualStyleBackColor = true;
@@ -361,27 +363,29 @@
             // 
             // btnPesquisar
             // 
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.Image = global::EscolaMusica.Properties.Resources.zoom;
             this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPesquisar.Location = new System.Drawing.Point(386, 463);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(89, 49);
-            this.btnPesquisar.TabIndex = 6;
+            this.btnPesquisar.TabIndex = 15;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPesquisar.UseVisualStyleBackColor = true;
-            this.btnPesquisar.Click += new System.EventHandler(this.button3_Click);
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnCadastrar
             // 
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.Image = global::EscolaMusica.Properties.Resources.add;
             this.btnCadastrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnCadastrar.Location = new System.Drawing.Point(249, 463);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(89, 49);
-            this.btnCadastrar.TabIndex = 2;
+            this.btnCadastrar.TabIndex = 13;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -436,7 +440,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = ":::  Vivencia em música - VEM  :::";
+            this.Text = "   VEM - Vivência em Música";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();

@@ -22,20 +22,6 @@ namespace EscolaMusica
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            FrmPesquisa frmPesquisa = new FrmPesquisa();
-            this.Hide();
-            frmPesquisa.ShowDialog();
-            this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            FrmHome frmHome = new FrmHome();
-            frmHome.ShowDialog();
-        }
-
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             if(btnCadastrar.Text == "Cadastrar")
@@ -296,6 +282,12 @@ namespace EscolaMusica
             return true;
         }
 
-       
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            FrmPesquisa frmPesquisa = new FrmPesquisa();
+            this.Hide();
+            frmPesquisa.ShowDialog();
+            this.Close();
+        }
     }
 }

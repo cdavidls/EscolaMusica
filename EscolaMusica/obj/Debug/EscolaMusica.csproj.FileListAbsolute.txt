@@ -9,4 +9,3 @@ C:\Users\Usuario\source\repos\EscolaMusica\EscolaMusica\obj\Debug\EscolaMusica.c
 C:\Users\Usuario\source\repos\EscolaMusica\EscolaMusica\obj\Debug\EscolaMusica.exe
 C:\Users\Usuario\source\repos\EscolaMusica\EscolaMusica\obj\Debug\EscolaMusica.pdb
 C:\Users\Usuario\source\repos\EscolaMusica\EscolaMusica\obj\Debug\EscolaMusica.FrmPesquisa.resources
-C:\Users\Usuario\source\repos\EscolaMusica\EscolaMusica\obj\Debug\EscolaMusica.FrmHome.resources

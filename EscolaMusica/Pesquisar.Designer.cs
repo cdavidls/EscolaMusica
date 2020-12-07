@@ -62,7 +62,7 @@
             this.txtPesquisa.Location = new System.Drawing.Point(133, 12);
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(521, 26);
-            this.txtPesquisa.TabIndex = 5;
+            this.txtPesquisa.TabIndex = 1;
             this.txtPesquisa.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtPesquisa_PreviewKeyDown);
             // 
             // label1
@@ -99,6 +99,7 @@
             this.emailResponsavel,
             this.celularResponsavel,
             this.Concluído});
+            this.dgvCadastros.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgvCadastros.Location = new System.Drawing.Point(9, 66);
             this.dgvCadastros.Name = "dgvCadastros";
             this.dgvCadastros.ReadOnly = true;
@@ -196,12 +197,13 @@
             // 
             this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoltar.BackColor = System.Drawing.Color.White;
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.FlatAppearance.BorderSize = 0;
             this.btnVoltar.Image = global::EscolaMusica.Properties.Resources.arrow_undo;
             this.btnVoltar.Location = new System.Drawing.Point(737, 12);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(51, 26);
-            this.btnVoltar.TabIndex = 11;
+            this.btnVoltar.TabIndex = 3;
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
@@ -209,11 +211,12 @@
             // 
             this.btnPesquisar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPesquisar.BackColor = System.Drawing.Color.White;
+            this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPesquisar.Image = global::EscolaMusica.Properties.Resources.zoom;
             this.btnPesquisar.Location = new System.Drawing.Point(665, 12);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(51, 26);
-            this.btnPesquisar.TabIndex = 10;
+            this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
@@ -235,7 +238,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPesquisa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "::: Pesquisar Aluno :::";
+            this.Text = "   VEM - Vivência em Música";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
