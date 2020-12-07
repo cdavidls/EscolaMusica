@@ -21,14 +21,8 @@ namespace EscolaMusica
             CarregaCadastros();
         }
 
-        private void FrmPesquisa_Load(object sender, EventArgs e)
-        {
-
-        }
-
         void CarregaCadastros()
         {
-
             try
             {
                 conexao.Open();
@@ -59,43 +53,18 @@ namespace EscolaMusica
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            dgvCadastros.Rows.Clear();
-            CarregaCadastros();
-            
-            //try
-            //{
-            //    conexao.Open();
-
-            //    SqlCommand comando = new SqlCommand("SELECT codigo, aluno, nascimento, celularAluno, curso, endereco, bairro, cep, emailAluno, mensalidade, responsavel, emailResponsavel, celularResponsavel, concluido FROM cadastro WHERE aluno LIKE '%" + txtPesquisa.Text + "%'", conexao);
-            //    SqlDataAdapter da = new SqlDataAdapter(comando);
-            //    DataTable dt = new DataTable();
-            //    da.Fill(dt);
-                
-            //    if (dt.Rows.Count > 0)
-            //    {
-                    
-            //        foreach (DataRow item in dt.Rows)
-            //        {
-                        
-                        
-            //            // Adiciona na grid os produtos cadastrados no banco de dados.
-            //            dgvCadastros.Rows.Add(item["codigo"].ToString(), item["aluno"].ToString(), item["nascimento"].ToString(), item["celularAluno"].ToString(), item["curso"].ToString(), item["endereco"].ToString(), item["bairro"].ToString(), item["cep"].ToString(), item["emailAluno"].ToString(), item["mensalidade"].ToString(), item["responsavel"].ToString(), item["emailResponsavel"].ToString(), item["celularResponsavel"].ToString(), item["concluido"].ToString());
-            //        }
-            //    }
-            //}
-            //catch (Exception erro)
-            //{
-            //    MessageBox.Show(erro.Message);
-            //}
-            //finally
-            //{
-            //    conexao.Close();
-            //}
+            if (Validar())
+            {
+                dgvCadastros.Rows.Clear();
+                CarregaCadastros();
+            }
         }
+
 
         private void dgvCadastros_DoubleClick(object sender, EventArgs e)
         {
             Form1 F1 = new Form1();
+            this.Hide();
             F1.txtCodigo.Text = this.dgvCadastros.CurrentRow.Cells[0].Value.ToString();
             F1.txtNomeAluno.Text = this.dgvCadastros.CurrentRow.Cells[1].Value.ToString();
             F1.txtNascimento.Text = this.dgvCadastros.CurrentRow.Cells[2].Value.ToString();
@@ -114,6 +83,39 @@ namespace EscolaMusica
                 F1.rgbConcluido.Checked = true;
             F1.btnCadastrar.Text = "Atualizar";
             F1.ShowDialog();
+            this.Close();
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            this.Hide();
+            form1.ShowDialog();
+            this.Close();
+        }
+
+        private void txtPesquisa_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (Validar())
+                {
+                    dgvCadastros.Rows.Clear();
+                    CarregaCadastros();
+                }
+            }
+        }
+        bool Validar()
+        {
+            errorProvider.Clear();
+            if (string.IsNullOrWhiteSpace(txtPesquisa.Text))
+            {
+                errorProvider.SetError(txtPesquisa, "Informe o nome do aluno!");
+                errorProvider.SetIconPadding(txtPesquisa, -20);
+                txtPesquisa.Focus();
+                return false;
+            }
+            return true;
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPesquisa));
             this.txtPesquisa = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,8 +47,11 @@
             this.emailResponsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.celularResponsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Concluído = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.btnPesquisar = new System.Windows.Forms.Button();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPesquisa
@@ -59,6 +63,7 @@
             this.txtPesquisa.Name = "txtPesquisa";
             this.txtPesquisa.Size = new System.Drawing.Size(521, 26);
             this.txtPesquisa.TabIndex = 5;
+            this.txtPesquisa.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtPesquisa_PreviewKeyDown);
             // 
             // label1
             // 
@@ -187,6 +192,19 @@
             this.Concluído.Name = "Concluído";
             this.Concluído.ReadOnly = true;
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVoltar.BackColor = System.Drawing.Color.White;
+            this.btnVoltar.FlatAppearance.BorderSize = 0;
+            this.btnVoltar.Image = global::EscolaMusica.Properties.Resources.arrow_undo;
+            this.btnVoltar.Location = new System.Drawing.Point(737, 12);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(51, 26);
+            this.btnVoltar.TabIndex = 11;
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // btnPesquisar
             // 
             this.btnPesquisar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -199,11 +217,16 @@
             this.btnPesquisar.UseVisualStyleBackColor = false;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // FrmPesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dgvCadastros);
             this.Controls.Add(this.txtPesquisa);
@@ -214,8 +237,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "::: Pesquisar Aluno :::";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmPesquisa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCadastros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,5 +264,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn celularResponsavel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Concluído;
         public System.Windows.Forms.DataGridView dgvCadastros;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
